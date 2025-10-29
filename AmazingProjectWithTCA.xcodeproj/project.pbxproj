@@ -6,11 +6,32 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		CA3A628B2EA7D24E00FB3B84 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CA3A628A2EA7D24E00FB3B84 /* ComposableArchitecture */; };
+		CABE466B2E9F8B4200576796 /* ComposableArchitecture in Frameworks */ = {isa = PBXBuildFile; productRef = CABE466A2E9F8B4200576796 /* ComposableArchitecture */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA3A62842EA7D23200FB3B84 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CABE46532E9F89BE00576796 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CABE465A2E9F89BE00576796;
+			remoteInfo = AmazingProjectWithTCA;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		CA3A62802EA7D23200FB3B84 /* AmazingProjectWithTCATests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmazingProjectWithTCATests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CABE465B2E9F89BE00576796 /* AmazingProjectWithTCA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmazingProjectWithTCA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		CA3A62812EA7D23200FB3B84 /* AmazingProjectWithTCATests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = AmazingProjectWithTCATests;
+			sourceTree = "<group>";
+		};
 		CABE465D2E9F89BE00576796 /* AmazingProjectWithTCA */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AmazingProjectWithTCA;
@@ -19,20 +40,38 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		CA3A627D2EA7D23200FB3B84 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA3A628B2EA7D24E00FB3B84 /* ComposableArchitecture in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CABE46582E9F89BE00576796 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CABE466B2E9F8B4200576796 /* ComposableArchitecture in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA3A62892EA7D24E00FB3B84 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		CABE46522E9F89BE00576796 = {
 			isa = PBXGroup;
 			children = (
 				CABE465D2E9F89BE00576796 /* AmazingProjectWithTCA */,
+				CA3A62812EA7D23200FB3B84 /* AmazingProjectWithTCATests */,
+				CA3A62892EA7D24E00FB3B84 /* Frameworks */,
 				CABE465C2E9F89BE00576796 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				CABE465B2E9F89BE00576796 /* AmazingProjectWithTCA.app */,
+				CA3A62802EA7D23200FB3B84 /* AmazingProjectWithTCATests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +88,30 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		CA3A627F2EA7D23200FB3B84 /* AmazingProjectWithTCATests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA3A62862EA7D23200FB3B84 /* Build configuration list for PBXNativeTarget "AmazingProjectWithTCATests" */;
+			buildPhases = (
+				CA3A627C2EA7D23200FB3B84 /* Sources */,
+				CA3A627D2EA7D23200FB3B84 /* Frameworks */,
+				CA3A627E2EA7D23200FB3B84 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA3A62852EA7D23200FB3B84 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				CA3A62812EA7D23200FB3B84 /* AmazingProjectWithTCATests */,
+			);
+			name = AmazingProjectWithTCATests;
+			packageProductDependencies = (
+				CA3A628A2EA7D24E00FB3B84 /* ComposableArchitecture */,
+			);
+			productName = AmazingProjectWithTCATests;
+			productReference = CA3A62802EA7D23200FB3B84 /* AmazingProjectWithTCATests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		CABE465A2E9F89BE00576796 /* AmazingProjectWithTCA */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = CABE46662E9F89BF00576796 /* Build configuration list for PBXNativeTarget "AmazingProjectWithTCA" */;
@@ -65,6 +129,7 @@
 			);
 			name = AmazingProjectWithTCA;
 			packageProductDependencies = (
+				CABE466A2E9F8B4200576796 /* ComposableArchitecture */,
 			);
 			productName = AmazingProjectWithTCA;
 			productReference = CABE465B2E9F89BE00576796 /* AmazingProjectWithTCA.app */;
@@ -80,6 +145,10 @@
 				LastSwiftUpdateCheck = 2600;
 				LastUpgradeCheck = 2600;
 				TargetAttributes = {
+					CA3A627F2EA7D23200FB3B84 = {
+						CreatedOnToolsVersion = 26.0.1;
+						TestTargetID = CABE465A2E9F89BE00576796;
+					};
 					CABE465A2E9F89BE00576796 = {
 						CreatedOnToolsVersion = 26.0.1;
 					};
@@ -94,17 +163,28 @@
 			);
 			mainGroup = CABE46522E9F89BE00576796;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				CABE46692E9F8B4200576796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = CABE465C2E9F89BE00576796 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				CABE465A2E9F89BE00576796 /* AmazingProjectWithTCA */,
+				CA3A627F2EA7D23200FB3B84 /* AmazingProjectWithTCATests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		CA3A627E2EA7D23200FB3B84 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CABE46592E9F89BE00576796 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +195,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		CA3A627C2EA7D23200FB3B84 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		CABE46572E9F89BE00576796 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +211,62 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		CA3A62852EA7D23200FB3B84 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CABE465A2E9F89BE00576796 /* AmazingProjectWithTCA */;
+			targetProxy = CA3A62842EA7D23200FB3B84 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		CA3A62872EA7D23200FB3B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJA69MKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiorettogiovanni.AmazingProjectWithTCATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingProjectWithTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AmazingProjectWithTCA";
+			};
+			name = Debug;
+		};
+		CA3A62882EA7D23200FB3B84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 79DJA69MKY;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.fiorettogiovanni.AmazingProjectWithTCATests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AmazingProjectWithTCA.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/AmazingProjectWithTCA";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		CABE46642E9F89BF00576796 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -276,7 +418,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -320,7 +462,7 @@
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
-				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = nonisolated;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
@@ -332,6 +474,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		CA3A62862EA7D23200FB3B84 /* Build configuration list for PBXNativeTarget "AmazingProjectWithTCATests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA3A62872EA7D23200FB3B84 /* Debug */,
+				CA3A62882EA7D23200FB3B84 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		CABE46562E9F89BE00576796 /* Build configuration list for PBXProject "AmazingProjectWithTCA" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -351,6 +502,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CABE46692E9F8B4200576796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-composable-architecture";
+			requirement = {
+				kind = exactVersion;
+				version = 1.22.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CA3A628A2EA7D24E00FB3B84 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CABE46692E9F8B4200576796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+		CABE466A2E9F8B4200576796 /* ComposableArchitecture */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CABE46692E9F8B4200576796 /* XCRemoteSwiftPackageReference "swift-composable-architecture" */;
+			productName = ComposableArchitecture;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CABE46532E9F89BE00576796 /* Project object */;
 }
