@@ -1,6 +1,5 @@
 import SwiftUI
 import ComposableArchitecture
-//TODO: loading 4 movies
 
 
 @ViewAction(for: BestMovieFeature.self)
