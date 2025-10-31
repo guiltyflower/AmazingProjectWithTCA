@@ -2,7 +2,7 @@ import SwiftUI
 import ComposableArchitecture
 
 struct MovieDetailView: View {
-  let store: StoreOf<MovieDetailFeature>
+  @Bindable var store: StoreOf<MovieDetailFeature>
 
   var body: some View {
     Form {

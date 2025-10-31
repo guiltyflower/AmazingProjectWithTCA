@@ -1,25 +1,9 @@
 import ComposableArchitecture
 import Foundation
 import SwiftUI
+import Dependencies
+import DependenciesMacros
 
-
-public struct Movie: Identifiable, Equatable, Sendable {
-  public let id: UUID
-  public let tmdbID: Int?
-  public var title: String
-  public var posterURL: String?
-  public var isFavorite: Bool
-
-
-  public init(id: UUID = .init(), tmdbID: Int? = nil, title: String, posterURL: String? = nil, isFavorite: Bool = false) {
-    self.id = id
-    self.tmdbID = tmdbID
-    self.title = title
-    self.posterURL = posterURL
-    self.isFavorite = isFavorite
-
-  }
-}
 
 @Reducer
 public struct BestMovieFeature: Sendable {
@@ -34,6 +18,7 @@ public struct BestMovieFeature: Sendable {
     var isSearching: Bool = false
     var isLoadingSearch: Bool = false
     var searchError: String?
+    @Shared(.appStorage("favorite_movies")) var favoriteStore: [FavoriteMovie] = []
   }
 
   @CasePathable
@@ -67,7 +52,6 @@ public struct BestMovieFeature: Sendable {
 
   @Dependency(\.movieAPI) var movieAPI
   @Dependency(\.movieSearch) var movieSearch
-  @Dependency(\.favoritesService) var favorites
 
 
   public var body: some ReducerOf<Self> {
@@ -101,8 +85,7 @@ public struct BestMovieFeature: Sendable {
   }
 }
 
-
- func applyFavorite(_ ids: Set<Int>, to list: inout [Movie]) {
+func applyFavorite(_ ids: Set<Int>, to list: inout [Movie]) {
   for i in list.indices {
     if let tid = list[i].tmdbID {
       list[i].isFavorite = ids.contains(tid)
