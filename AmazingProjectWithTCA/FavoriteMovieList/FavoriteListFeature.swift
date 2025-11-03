@@ -32,20 +32,19 @@ public struct FavoriteListFeature {
         return .none
 
       case let .path(.element(elementID, action: .delegate(.movieUpdated(movie)))):
-        if let tid = movie.tmdbID, !movie.isFavorite {
+        /*if let tid = movie.tmdbID, !movie.isFavorite {
           state.$favoriteStore.withLock { store in
             store.removeAll { $0.tmdbID == tid }
           }
          
-         /*
-          si je veux que MovieDetailView disparaitre tout de suite
+
           if state.path.ids.last == elementID {
             state.path.removeLast()
           } else if let idx = state.path.ids.firstIndex(of: elementID) {
             state.path.remove(at: idx)
           }
-          */
-        }
+
+        }*/
         return .none
 
 
